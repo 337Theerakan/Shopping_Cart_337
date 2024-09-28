@@ -50,7 +50,7 @@ const App2 = ({ cart, setCart, showNotification }) => {
   };
 
   const applyCoupon = () => {
-    if (coupon === "DISCOUNT10") { 
+    if (coupon === "IwanToD1E") { 
       setDiscount(0.1); 
       setCouponMessage('คูปองส่วนลด 10% ถูกใช้แล้ว');
     } else {
@@ -125,4 +125,4 @@ const App2 = ({ cart, setCart, showNotification }) => {
 };
 
 export default App2;
-//DISCOUNT10
+//IwanToD1E
