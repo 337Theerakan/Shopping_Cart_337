@@ -30,14 +30,14 @@ const Cart = ({ open, setOpen, cart, updateQuantity, clearCart, total }) => {
               </li>
             ))
           ) : (
-            <p className="text-center text-gray-500">ตะกร้าว่าง</p>
+            <p className="text-center text-gray-500">ไม่มีอะไรเลย</p>
           )}
         </ul>
         <div className="mt-6">
           <p className="text-lg font-semibold text-white">รวมทั้งหมด: {total.toLocaleString('th-TH')} บาท</p>
           <button onClick={clearCart} className="w-full mt-4 bg-red-600 text-white p-2 rounded hover:bg-red-700">นำสินค้าออกทั้งหมด</button>
           <Link to="/payment">
-            <button className="w-full mt-4 bg-green-600 text-white p-2 rounded hover:bg-green-700">ที่ต้องทำการชำระเงิน</button>
+            <button className="w-full mt-4 bg-green-600 text-white p-2 rounded hover:bg-green-700">ทำการชำระเงิน</button>
           </Link>
         </div>
       </div>
